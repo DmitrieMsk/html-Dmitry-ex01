@@ -14,6 +14,10 @@
     onclick="clickHandler()"
     onmouseenter="moveHandler()"
     onmouseout="moveHandler()"><img src = "Dima.jpeg" alt="картинка не найдена"></div>
+    <input 
+        
+        onchange="clickHandlerForInput(event)"
+    />
 </div>
 <style>
     .style_class_born
@@ -74,5 +78,14 @@
     {
         //alert("Why did you click here?")
         console.log("event", event);
+    }
+    function changeHandler(event)
+    {
+        //alert("Why did you click here?")
+        console.log("event", event);
+    }
+    function clickHandlerForInput(event)
+    {
+        alert("I see now how you changed the input")
     }
 </script>
