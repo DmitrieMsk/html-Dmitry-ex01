@@ -10,7 +10,10 @@
 
 </div>
 <div>
-    <div class = "style_class_picture" onclick="clickHandler()"><img src = "Dima.jpeg" alt="картинка не найдена"></div>
+    <div class = "style_class_picture" 
+    onclick="clickHandler()"
+    onmouseenter="moveHandler()"
+    onmouseout="moveHandler()"><img src = "Dima.jpeg" alt="картинка не найдена"></div>
 </div>
 <style>
     .style_class_born
@@ -66,5 +69,10 @@
     function clickHandler()
     {
         alert("Why did you click here?")
+    }
+    function moveHandler(event)
+    {
+        //alert("Why did you click here?")
+        console.log("event", event);
     }
 </script>
